@@ -88,3 +88,33 @@
 .auth a {
     color: #333333 !important;
 }
+
+/* ========================================
+   CUSTOM: Force Login Buttons back to White
+   ======================================== */
+
+/* This overrides the link color specifically for buttons */
+.auth a.btn, 
+.auth .btn {
+    color: #ffffff !important;
+}
+
+/* ========================================
+   CUSTOM: Change "Create an Account" Button Color
+   ======================================== */
+
+/* Adjust the background and border color here */
+.auth .btn-secondary {
+    background-color: #4c2929 !important;
+    border-color: #cccccc !important;
+    color: #ffffff !important; /* Ensures text stays white */
+}
+/* ========================================
+   CUSTOM: Style "CONTINUE" Button
+   ======================================== */
+
+.auth .btn-primary {
+    background-color: #351a1a !important; /* Change this to your desired color */
+    border-color: #cccccc !important;
+    color: #ffffff !important;
+}
