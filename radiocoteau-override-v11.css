@@ -55,3 +55,13 @@
 #tab_overview span.tasting-notes-hdr::before { content: "VINEYARD PROFILE" !important; }
 #tab_overview span.production-notes-hdr::before { content: "TASTING NOTES" !important; }
 #tab_overview span.other-notes-hdr::before { content: "CELLAR NOTES" !important; }
+/* ========================================
+   CUSTOM: Force Left-Align on Mobile
+   ======================================== */
+
+@media only screen and (max-width: 768px) {
+    #tab_overview,
+    #tab_reviews {
+        text-align: left !important;
+    }
+}
