@@ -9,3 +9,38 @@
     height: max-content !important;
     z-index: 10 !important; 
 }
+/* ========================================
+   CUSTOM: Rename Product Details Headers
+   ======================================== */
+
+/* 1. Hide the original hardcoded text for all potential headers */
+#tab_overview .tasting-notes-hdr,
+#tab_overview .production-notes-hdr,
+#tab_overview .other-notes-hdr,
+#tab_reviews > h3,
+#tab_vineyards > h3,
+#tab_winemaker > h3 {
+    font-size: 0 !important; 
+}
+
+/* 2. Inject your new text (Only the ones that actually render will show up) */
+
+/* Overview Tab Headers */
+#tab_overview .tasting-notes-hdr::before {
+    content: "VINEYARD PROFILE" !important; 
+    font-size: var(--font-size-sm) !important; 
+}
+#tab_overview .production-notes-hdr::before {
+    content: "TASTING NOTES" !important; 
+    font-size: var(--font-size-sm) !important; 
+}
+#tab_overview .other-notes-hdr::before {
+    content: "CELLAR NOTES" !important;
+    font-size: var(--font-size-sm) !important; 
+}
+
+/* Dedicated Tab Headers (These use a larger font size by default) */
+#tab_reviews > h3::before {
+    content: "REVIEWS" !important;
+    font-size: var(--font-size-lg) !important; 
+}
