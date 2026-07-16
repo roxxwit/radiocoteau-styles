@@ -10,54 +10,32 @@
     z-index: 10 !important; 
 }
 /* ========================================
-   CUSTOM: Rename Product Details Headers
+   CUSTOM: Rename Product Details Headers (Span Fix)
    ======================================== */
 
-/* 1. Make the original text invisible but keep its layout space */
-#tab_overview .tasting-notes-hdr,
-#tab_overview .production-notes-hdr,
-#tab_overview .other-notes-hdr,
-#tab_reviews > h3 {
+/* 1. Hide the original text inside the inline spans */
+#tab_overview span.tasting-notes-hdr,
+#tab_overview span.production-notes-hdr,
+#tab_overview span.other-notes-hdr {
+    font-size: 0 !important;
     visibility: hidden !important;
-    position: relative !important;
 }
 
-/* 2. Inject your new text directly over the invisible old text */
-
-/* Overview Tab Headers */
-#tab_overview .tasting-notes-hdr::before {
-    content: "VINEYARD PROFILE" !important; 
+/* 2. Inject your new text and force it to be visible */
+#tab_overview span.tasting-notes-hdr::before {
+    content: "VINEYARD PROFILE" !important;
+    font-size: 16px !important; /* Using a hard pixel size to bypass variables */
     visibility: visible !important;
-    position: absolute !important;
-    left: 0 !important;
-    top: 0 !important;
-    font-size: var(--font-size-sm) !important; 
 }
 
-#tab_overview .production-notes-hdr::before {
-    content: "TASTING NOTES" !important; 
+#tab_overview span.production-notes-hdr::before {
+    content: "TASTING NOTES" !important;
+    font-size: 16px !important;
     visibility: visible !important;
-    position: absolute !important;
-    left: 0 !important;
-    top: 0 !important;
-    font-size: var(--font-size-sm) !important; 
 }
 
-#tab_overview .other-notes-hdr::before {
+#tab_overview span.other-notes-hdr::before {
     content: "CELLAR NOTES" !important;
+    font-size: 16px !important;
     visibility: visible !important;
-    position: absolute !important;
-    left: 0 !important;
-    top: 0 !important;
-    font-size: var(--font-size-sm) !important; 
-}
-
-/* Dedicated Tab Headers */
-#tab_reviews > h3::before {
-    content: "REVIEWS" !important;
-    visibility: visible !important;
-    position: absolute !important;
-    left: 0 !important;
-    top: 0 !important;
-    font-size: var(--font-size-lg) !important; 
 }
