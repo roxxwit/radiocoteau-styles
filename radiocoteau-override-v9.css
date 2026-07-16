@@ -1,6 +1,7 @@
 /* ========================================
    CUSTOM: Sticky Product Bottle on Details Page
    ======================================== */
+
 #tabs-product .prod-image {
     position: -webkit-sticky !important;
     position: sticky !important;
@@ -9,13 +10,10 @@
     height: max-content !important;
     z-index: 10 !important; 
 }
-/* ========================================
-   CUSTOM: Disable Sticky Bottle on Mobile
-   ======================================== */
 
-/* This hides the sticky effect on mobile devices */
+/* Mobile Override: Disable stickiness on screens smaller than 768px */
 @media only screen and (max-width: 768px) {
-    .your-sticky-bottle-class-here {
+    #tabs-product .prod-image {
         position: static !important;
         top: auto !important;
     }
