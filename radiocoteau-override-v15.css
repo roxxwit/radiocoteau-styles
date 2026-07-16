@@ -78,3 +78,13 @@
     line-height: 1.6 !important;  /* Adds extra breathing room */
     color: #333333 !important;    /* Change this hex code to your preferred color */
 }
+
+/* ========================================
+   CUSTOM: Uniform Color for Login Elements
+   ======================================== */
+
+.auth h1,
+.auth label,
+.auth a {
+    color: #333333 !important;
+}
