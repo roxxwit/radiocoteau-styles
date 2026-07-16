@@ -10,32 +10,37 @@
     z-index: 10 !important; 
 }
 /* ========================================
-   CUSTOM: Rename Product Details Headers (Span Fix)
+   CUSTOM: Final Header Force-Override
    ======================================== */
 
-/* 1. Hide the original text inside the inline spans */
+/* 1. Force the old spans to disappear entirely */
 #tab_overview span.tasting-notes-hdr,
 #tab_overview span.production-notes-hdr,
 #tab_overview span.other-notes-hdr {
-    font-size: 0 !important;
-    visibility: hidden !important;
+    display: none !important;
 }
 
-/* 2. Inject your new text and force it to be visible */
+/* 2. Create new block-level headers in their place */
 #tab_overview span.tasting-notes-hdr::before {
     content: "VINEYARD PROFILE" !important;
-    font-size: 16px !important; /* Using a hard pixel size to bypass variables */
-    visibility: visible !important;
+    display: block !important;
+    font-size: 16px !important;
+    font-weight: bold !important;
+    margin-bottom: 5px !important;
 }
 
 #tab_overview span.production-notes-hdr::before {
     content: "TASTING NOTES" !important;
+    display: block !important;
     font-size: 16px !important;
-    visibility: visible !important;
+    font-weight: bold !important;
+    margin-bottom: 5px !important;
 }
 
 #tab_overview span.other-notes-hdr::before {
     content: "CELLAR NOTES" !important;
+    display: block !important;
     font-size: 16px !important;
-    visibility: visible !important;
+    font-weight: bold !important;
+    margin-bottom: 5px !important;
 }
