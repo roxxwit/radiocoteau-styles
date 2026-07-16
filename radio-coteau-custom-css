@@ -1,0 +1,11 @@
+/* ========================================
+   CUSTOM: Sticky Product Bottle on Details Page
+   ======================================== */
+#tabs-product .prod-image {
+    position: -webkit-sticky !important;
+    position: sticky !important;
+    top: 175px !important; 
+    align-self: flex-start !important;
+    height: max-content !important;
+    z-index: 10 !important; 
+}
