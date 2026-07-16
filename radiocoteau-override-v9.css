@@ -19,6 +19,15 @@
     }
 }
 /* ========================================
+   CUSTOM: Force Left-Align on Mobile
+   ======================================== */
+
+@media only screen and (max-width: 768px) {
+    #tab_overview {
+        text-align: left !important;
+    }
+}
+/* ========================================
    CUSTOM: Rename Product Details Headers
    ======================================== */
 
