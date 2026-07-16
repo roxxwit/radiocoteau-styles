@@ -10,6 +10,17 @@
     z-index: 10 !important; 
 }
 /* ========================================
+   CUSTOM: Disable Sticky Bottle on Mobile
+   ======================================== */
+
+/* This hides the sticky effect on mobile devices */
+@media only screen and (max-width: 768px) {
+    .your-sticky-bottle-class-here {
+        position: static !important;
+        top: auto !important;
+    }
+}
+/* ========================================
    CUSTOM: Rename Product Details Headers
    ======================================== */
 
