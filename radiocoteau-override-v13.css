@@ -68,5 +68,13 @@
 #tab_overview span.tasting-notes-hdr::before { content: "VINEYARD PROFILE" !important; }
 #tab_overview span.production-notes-hdr::before { content: "TASTING NOTES" !important; }
 #tab_overview span.other-notes-hdr::before { content: "CELLAR NOTES" !important; }
+/* ========================================
+   CUSTOM: Increase Login Page Font Size
+   ======================================== */
+
+.auth p {
+    font-size: 18px !important;  /* Bumps size up for readability */
+    line-height: 1.6 !important; /* Adds extra breathing room between lines */
+}
 
 
