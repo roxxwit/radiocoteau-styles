@@ -53,13 +53,14 @@
     margin-bottom: 5px !important;
     margin-top: 15px !important;
 }
-#tab_reviews::before {
+
+#tab_overview span.reviews-hdr::before {
     content: "REVIEWS" !important;
     display: block !important;
     font-family: inherit !important;
     font-size: 13px !important;
     font-weight: 700 !important;
     color: #333 !important;
-    margin-bottom: 10px !important;
+    margin-bottom: 5px !important;
     margin-top: 15px !important;
 }
