@@ -10,15 +10,17 @@
     z-index: 10 !important; 
 }
 /* ========================================
-   CUSTOM: Final Header Injection
+   CUSTOM: Header Override (Hide Original + Inject New)
    ======================================== */
 
+/* 1. Hide original text */
 #tab_overview span.tasting-notes-hdr,
 #tab_overview span.production-notes-hdr,
 #tab_overview span.other-notes-hdr {
-    display: none !important;
+    font-size: 0 !important;
 }
 
+/* 2. Inject new text */
 #tab_overview span.tasting-notes-hdr::before {
     content: "VINEYARD PROFILE" !important;
     display: block !important;
