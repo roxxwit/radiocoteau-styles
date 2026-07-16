@@ -1,0 +1,39 @@
+/* ========================================
+   CUSTOM: Sticky Product Bottle on Details Page
+   ======================================== */
+#tabs-product .prod-image {
+    position: -webkit-sticky !important;
+    position: sticky !important;
+    top: 175px !important; 
+    align-self: flex-start !important;
+    height: max-content !important;
+    z-index: 10 !important; 
+}
+/* ========================================
+   CUSTOM: Rename Product Details Headers
+   ======================================== */
+
+/* 1. Hide original text */
+#tab_overview span.tasting-notes-hdr,
+#tab_overview span.production-notes-hdr,
+#tab_overview span.other-notes-hdr {
+    font-size: 0 !important;
+}
+
+/* 2. Injection logic */
+#tab_overview span.tasting-notes-hdr::before,
+#tab_overview span.production-notes-hdr::before,
+#tab_overview span.other-notes-hdr::before {
+    display: block !important;
+    font-family: var(--font-body) !important; 
+    font-weight: 700 !important;
+    color: #333 !important;
+    margin-bottom: 10px !important;
+    margin-top: 15px !important;
+    font-size: 14px !important;
+}
+
+/* 3. Individual Text Labels */
+#tab_overview span.tasting-notes-hdr::before { content: "VINEYARD PROFILE" !important; }
+#tab_overview span.production-notes-hdr::before { content: "TASTING NOTES" !important; }
+#tab_overview span.other-notes-hdr::before { content: "CELLAR NOTES" !important; }
