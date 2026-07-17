@@ -128,3 +128,14 @@ header,
     position: relative; /* Required for z-index to work */
     z-index: 99999 !important; /* Forces it to the very front */
 }
+/* ========================================
+   CUSTOM: Make Checkout Container Solid White
+   ======================================== */
+
+.your-container-class {
+    background-color: #ffffff !important; /* Forces solid white */
+    background-image: none !important;    /* Kills any background images/patterns */
+    
+    /* Optional: Adds a subtle shadow so it pops off the page nicely */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1) !important; 
+}
