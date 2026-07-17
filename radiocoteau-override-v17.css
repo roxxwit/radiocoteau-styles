@@ -118,3 +118,13 @@
     border-color: #cccccc !important;
     color: #ffffff !important;
 }
+/* ========================================
+   CUSTOM: Force Nav Bar to the Front
+   ======================================== */
+
+#HeaderContainer, 
+header,
+.site-header {
+    position: relative; /* Required for z-index to work */
+    z-index: 99999 !important; /* Forces it to the very front */
+}
