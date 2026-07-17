@@ -139,3 +139,11 @@ header,
     z-index: 10 !important; /* Lowers it so it slides under the nav */
     padding: 15px !important; /* Optional: adds a little breathing room inside the white box */
 }
+/* ========================================
+   CUSTOM: Remove Gray Background from Checkout Footers
+   ======================================== */
+
+.card-footer {
+    background-color: transparent !important; /* Makes the gray invisible */
+    border-top: none !important; /* Removes the subtle line above the button, optional but looks cleaner */
+}
