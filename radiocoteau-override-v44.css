@@ -263,7 +263,7 @@ app-checkout h3.product-title {
     color: #333333 !important; 
     text-transform: none !important;
     font-style: normal !important;
-    font-weight: 600 !important; 
+    font-weight: 600 semibold !important; 
     line-height: 1.8 !important; 
     text-align: justify !important; 
     
