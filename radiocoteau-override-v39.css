@@ -260,19 +260,35 @@ app-checkout h3.product-title {
     padding: 30px 40px !important; 
     line-height: 1.8 !important; 
     text-align: center !important; 
-    max-width: 900px !important;
-    margin: 0 auto 30px auto !important; 
-    background-color: #ffffff !important; 
-    border: 1px solid #e5e5e5 !important; 
+    
+    /* ALIGNMENT & GAP: 0px on top aligns it with the WINES menu. 15px on the bottom pulls the product cards closer. */
+    margin: 0 auto 15px auto !important; 
+    
+    /* TRANSLUCENT BACKGROUND: rgba(Red, Green, Blue, Opacity). 
+       Currently set to white (255, 255, 255) at 60% opacity (0.6). 
+       Change the RGB values to tint it, or tweak the 0.6 to make it more/less see-through. */
+    background-color: rgba(255, 255, 255, 0.6) !important; 
+    
+    /* --- BORDER OPTIONS --- */
+    
+    /* OPTION A: 4-Sided Border (Matches product cards exactly) */
+    border: 2px solid var(--color-border-light) !important; 
+    border-radius: 6px !important; 
+    
+    /* OPTION B: Top & Bottom Border Only 
+       (To use this, delete the two Option A lines above, and remove the /* from the four lines below) */
+    /* border: none !important; */
+    /* border-top: 2px solid var(--color-border-light) !important; */
+    /* border-bottom: 2px solid var(--color-border-light) !important; */
+    /* border-radius: 0 !important; */
 }
 
-/* Mobile Settings (Triggers on screens 768px wide or smaller) */
+/* Mobile Settings */
 @media (max-width: 768px) {
     .group-summary {
-        /* Shrinks the inside padding so the text has room to breathe */
         padding: 20px 15px !important; 
         
-        /* Adds 15px of outside margin on the left/right so the border doesn't touch the glass edge of the phone */
-        margin: 0 15px 30px 15px !important; 
+        /* Keeps the sides from touching the phone screen, but maintains the tighter 15px bottom gap */
+        margin: 0 15px 15px 15px !important; 
     }
 }
