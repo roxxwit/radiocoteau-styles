@@ -265,7 +265,7 @@ app-checkout h3.product-title {
     font-style: normal !important;
     
     /* FIX: Removed the invalid 'semibold' keyword */
-    font-weight: 600 !important; 
+    font-weight: normal !important; 
     
     line-height: 1.8 !important; 
     text-align: justify !important; 
