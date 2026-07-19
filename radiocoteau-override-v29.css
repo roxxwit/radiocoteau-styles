@@ -179,7 +179,7 @@ li.g a {
     border-color: #cccaca !important; /* Change this hex code to your preferred color */
     
     /* Optional: If the original hover effect uses a shadow instead of a standard border, use this line too */
-    box-shadow: 0 0 2px rgba(122, 45, 45, 0.3) !important; 
+    box-shadow: 0 0 3px rgba(122, 45, 45, 0.4) !important; 
 }
 /* ========================================
    CUSTOM: Checkout Numbered Step Headers
@@ -199,12 +199,14 @@ app-checkout h3.active.selected {
     color: #7a2d2d !important; 
 }
 /* ========================================
-   CUSTOM: Primary Button Text Styling
+   CUSTOM: All Button Text Styling
    ======================================== */
 
-button.btn.btn-primary {
+button.btn.btn-primary,
+button.btn.btn-secondary,
+button.btn.btn-default {
     font-family: "Times New Roman", Times, serif !important; 
-    font-size: 14px !important;  /* Bumping this up high to force a visible change */
+    font-size: 16px !important;  /* Make sure to adjust this to your preferred final size */
     text-transform: uppercase !important;
     font-weight: normal !important; 
 }
