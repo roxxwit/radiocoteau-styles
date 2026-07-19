@@ -246,10 +246,10 @@ app-checkout h3.product-title {
 
 .productItem .price {
     /* Adjust this number to your liking (originally 22px) */
-    font-size: 17px !important;     
+    font-size: 16px !important;     
     
     /* Changes it from 700 (heavy bold) to standard weight */
-    font-weight: 600 !important; 
+    font-weight: 400 !important; 
 }
 /* ========================================
    CUSTOM: Store Intro Text (Group Summary)
@@ -263,23 +263,18 @@ app-checkout h3.product-title {
     color: #333333 !important; 
     text-transform: none !important;
     font-style: normal !important;
-    font-weight: 600 semibold !important; 
+    
+    /* FIX: Removed the invalid 'semibold' keyword */
+    font-weight: 600 !important; 
+    
     line-height: 1.8 !important; 
     text-align: justify !important; 
     
-    /* ALIGNMENT & GAP: 0px on top aligns it with the WINES menu. 15px on the bottom pulls the product cards closer. */
+    /* ALIGNMENT & GAP */
     margin: 0 auto -40px auto !important; 
     
-    /* TRANSLUCENT BACKGROUND: rgba(Red, Green, Blue, Opacity). 
-       Currently set to white (255, 255, 255) at 60% opacity (0.6). 
-       Change the RGB values to tint it, or tweak the 0.6 to make it more/less see-through. */
+    /* TRANSLUCENT BACKGROUND */
     background-color: rgba(255, 255, 255, 0.4) !important; 
-    
-    /* --- BORDER OPTIONS --- */
-    
-    /* 4-Sided Border (Matches product cards exactly) */
-    /* border: 2px solid var(--color-border-light) !important; 
-    border-radius: 6px !important;*/ 
     
     /* Top & Bottom Border Only */ 
     border: none !important; 
@@ -288,12 +283,16 @@ app-checkout h3.product-title {
     border-radius: 0 !important; 
 }
 
+/* Force Color on Inner Text Elements */
+.group-summary p,
+.group-summary span {
+    color: #333333 !important;
+}
+
 /* Mobile Settings */
 @media (max-width: 768px) {
     .group-summary {
         padding: 20px 15px !important; 
-        
-        /* Keeps the sides from touching the phone screen, but maintains the tighter 15px bottom gap */
         margin: 0 15px 15px 15px !important; 
     }
 }
