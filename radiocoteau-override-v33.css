@@ -192,22 +192,12 @@ app-checkout h3,
     font-size: 14px !important;              
     font-weight: normal !important;             
     color: #333333 !important;   
-    text-transform: uppercase !important;            
+    text-transform: uppercase !important;
+    font-weight: 600 semibold !important; 
 }
 
 app-checkout h3.active.selected {
     color: #7a2d2d !important; 
-}
-/* ========================================
-   CUSTOM: Universal Primary Button Styling
-   ======================================== */
-
-.btn.btn-primary,
-.btn.btn-secondary {
-    font-family: "Times New Roman", Times, serif !important; 
-    font-size: 14px !important;  
-    text-transform: uppercase !important;
-    font-weight: normal !important; 
 }
 /* ========================================
    CUSTOM: Force Hide Promotions Section
@@ -215,4 +205,18 @@ app-checkout h3.active.selected {
 
 app-payment-methods .other {
     display: none !important; 
+}
+/* ========================================
+   CUSTOM: Universal Button Styling (Cart, Checkout, Sign-In)
+   ======================================== */
+
+.btn.btn-primary,
+.btn.btn-secondary,
+.btn.sign-in,
+.btn.btn-block,
+.auth .btn {
+    font-family: "Times New Roman", Times, serif !important; 
+    font-size: 14px !important;  
+    text-transform: uppercase !important;
+    font-weight: normal !important; 
 }
