@@ -155,3 +155,29 @@ header,
    font-size: 16px !important; /* Adjust this number to make it larger or smaller */ 
    color: #333333 !important; /* Make sure this matches your product name color */
 }
+/* ========================================
+   CUSTOM: Style Left Sidebar Menu (Available Wines)
+   ======================================== */
+
+/* Centers the text */
+li.g {
+    text-align: center !important;
+}
+
+/* Changes the font to match the WINES header */
+li.g a {
+    font-family: var(--font-nav) !important; /* Pulls in Bank Gothic */
+    text-transform: uppercase !important;    /* Forces all-caps to match */
+    letter-spacing: 1px !important;          /* Gives it a little breathing room */
+    font-size: 14px !important;              /* Adjust this if it looks too big/small */
+}
+/* ========================================
+   CUSTOM: Product Container Hover Border
+   ======================================== */
+
+.productItem:hover .pi-content {
+    border-color: #cccaca !important; /* Change this hex code to your preferred color */
+    
+    /* Optional: If the original hover effect uses a shadow instead of a standard border, use this line too */
+    box-shadow: 0 0 5px rgba(122, 45, 45, 0.5) !important; 
+}
