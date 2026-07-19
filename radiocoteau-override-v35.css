@@ -221,16 +221,18 @@ app-payment-methods .other {
     font-weight: normal !important; 
 }
 /* ========================================
-   CUSTOM: Universal Button Hover & Focus
+   CUSTOM: Nuke the Peach Hover/Focus Glow
    ======================================== */
 
-.btn:hover,
-.btn:focus,
-.btn:active {
-    /* This changes the solid border line */
+button.btn:hover,
+button.btn:focus,
+button.btn:active,
+button.btn-primary:hover,
+button.btn-primary:focus,
+button.btn-primary:active,
+.auth button.btn:focus,
+.auth button.btn:hover {
     border-color: #7a2d2d !important; 
-    
-    /* This changes the "glow" shadow to a matching maroon instead of peach */
-    /* The rgba(122, 45, 45, 0.25) is just the hex #7a2d2d converted to RGB with 25% opacity */
-    box-shadow: 0 0 0 0.2rem rgba(122, 45, 45, 0.25) !important; 
+    box-shadow: 0 0 0 0.2rem rgba(240, 240, 240, 0.25) !important; 
+    outline: none !important; /* Kills any lingering default browser rings */
 }
