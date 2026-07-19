@@ -144,8 +144,9 @@ header,
    ======================================== */
 
 .prod-name a.prod-title {
-    font-size: 20px !important; /* Adjust this number to make it larger or smaller */
+    font-size: 19px !important; /* Adjust this number to make it larger or smaller */
     color: #333333 !important;  /* Change this hex code to your preferred color */
+    font-weight: semibold !important; 
 }
 /* ========================================
    CUSTOM: Style Product Appellation/Subtitle
@@ -154,6 +155,18 @@ header,
 .prod-content em {
    font-size: 16px !important; /* Adjust this number to make it larger or smaller */ 
    color: #333333 !important; /* Make sure this matches your product name color */
+   font-weight: semibold !important; 
+}
+/* ========================================
+   CUSTOM: Product List Price Styling
+   ======================================== */
+
+.productItem .price {
+    /* Adjust this number to your liking (originally 22px) */
+    font-size: 16px !important;     
+    
+    /* Changes it from 700 (heavy bold) to standard weight */
+    font-weight: semibold !important; 
 }
 /* ========================================
    CUSTOM: Style Left Sidebar Menu (Available Wines)
@@ -218,5 +231,23 @@ app-payment-methods .other {
     font-family: "Times New Roman", Times, serif !important; 
     font-size: 14px !important;  
     text-transform: uppercase !important;
+    font-weight: normal !important; 
+}
+/* ========================================
+   CUSTOM: Checkout Product Title Casing
+   ======================================== */
+
+app-checkout h3.product-title {
+    text-transform: none !important; /* Removes the all-caps and restores the original casing */
+}
+/* ========================================
+   CUSTOM: Product List Price Styling
+   ======================================== */
+
+.productItem .price {
+    /* Adjust this number to your liking (originally 22px) */
+    font-size: 16px !important;     
+    
+    /* Changes it from 700 (heavy bold) to standard weight */
     font-weight: normal !important; 
 }
