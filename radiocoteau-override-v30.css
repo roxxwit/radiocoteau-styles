@@ -206,7 +206,7 @@ button.btn.btn-primary,
 button.btn.btn-secondary,
 button.btn.btn-default {
     font-family: "Times New Roman", Times, serif !important; 
-    font-size: 16px !important;  /* Make sure to adjust this to your preferred final size */
+    font-size: 14px !important;  /* Make sure to adjust this to your preferred final size */
     text-transform: uppercase !important;
     font-weight: normal !important; 
 }
