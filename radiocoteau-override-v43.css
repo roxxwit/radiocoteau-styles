@@ -246,10 +246,10 @@ app-checkout h3.product-title {
 
 .productItem .price {
     /* Adjust this number to your liking (originally 22px) */
-    font-size: 18px !important;     
+    font-size: 17px !important;     
     
     /* Changes it from 700 (heavy bold) to standard weight */
-    font-weight: semibold !important; 
+    font-weight: 600 !important; 
 }
 /* ========================================
    CUSTOM: Store Intro Text (Group Summary)
@@ -262,8 +262,8 @@ app-checkout h3.product-title {
     font-size: 16px !important;  
     color: #333333 !important; 
     text-transform: none !important;
-    font-style: none !important;
-    font-weight: semibold !important; 
+    font-style: normal !important;
+    font-weight: 600 !important; 
     line-height: 1.8 !important; 
     text-align: justify !important; 
     
