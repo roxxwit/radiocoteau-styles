@@ -220,6 +220,14 @@ app-payment-methods .other {
     display: none !important; 
 }
 /* ========================================
+   CUSTOM: Force Hide All Promo Code Components
+   ======================================== */
+
+app-promo-code,
+.promo-code {
+    display: none !important; 
+}
+/* ========================================
    CUSTOM: Universal Button Styling (Cart, Checkout, Sign-In)
    ======================================== */
 
