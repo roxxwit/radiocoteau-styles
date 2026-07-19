@@ -209,3 +209,10 @@ app-checkout h3.active.selected {
     text-transform: uppercase !important;
     font-weight: normal !important; 
 }
+/* ========================================
+   CUSTOM: Force Hide Promotions Section
+   ======================================== */
+
+app-payment-methods .other {
+    display: none !important; 
+}
