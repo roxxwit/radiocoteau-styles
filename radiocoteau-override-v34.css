@@ -220,3 +220,17 @@ app-payment-methods .other {
     text-transform: uppercase !important;
     font-weight: normal !important; 
 }
+/* ========================================
+   CUSTOM: Universal Button Hover & Focus
+   ======================================== */
+
+.btn:hover,
+.btn:focus,
+.btn:active {
+    /* This changes the solid border line */
+    border-color: #7a2d2d !important; 
+    
+    /* This changes the "glow" shadow to a matching maroon instead of peach */
+    /* The rgba(122, 45, 45, 0.25) is just the hex #7a2d2d converted to RGB with 25% opacity */
+    box-shadow: 0 0 0 0.2rem rgba(122, 45, 45, 0.25) !important; 
+}
