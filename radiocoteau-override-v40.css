@@ -262,25 +262,24 @@ app-checkout h3.product-title {
     text-align: center !important; 
     
     /* ALIGNMENT & GAP: 0px on top aligns it with the WINES menu. 15px on the bottom pulls the product cards closer. */
-    margin: 0 auto 15px auto !important; 
+    margin: 0 auto 0px auto !important; 
     
     /* TRANSLUCENT BACKGROUND: rgba(Red, Green, Blue, Opacity). 
        Currently set to white (255, 255, 255) at 60% opacity (0.6). 
        Change the RGB values to tint it, or tweak the 0.6 to make it more/less see-through. */
-    background-color: rgba(255, 255, 255, 0.6) !important; 
+    background-color: rgba(255, 255, 255, 0.4) !important; 
     
     /* --- BORDER OPTIONS --- */
     
-    /* OPTION A: 4-Sided Border (Matches product cards exactly) */
-    border: 2px solid var(--color-border-light) !important; 
-    border-radius: 6px !important; 
+    /* 4-Sided Border (Matches product cards exactly) */
+    /* border: 2px solid var(--color-border-light) !important; 
+    border-radius: 6px !important;*/ 
     
-    /* OPTION B: Top & Bottom Border Only 
-       (To use this, delete the two Option A lines above, and remove the /* from the four lines below) */
-    /* border: none !important; */
-    /* border-top: 2px solid var(--color-border-light) !important; */
-    /* border-bottom: 2px solid var(--color-border-light) !important; */
-    /* border-radius: 0 !important; */
+    /* Top & Bottom Border Only */ 
+    border: none !important; 
+    border-top: 2px solid var(--color-border-light) !important;
+    border-bottom: 2px solid var(--color-border-light) !important; 
+    border-radius: 0 !important; 
 }
 
 /* Mobile Settings */
