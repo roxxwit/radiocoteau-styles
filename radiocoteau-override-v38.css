@@ -251,3 +251,28 @@ app-checkout h3.product-title {
     /* Changes it from 700 (heavy bold) to standard weight */
     font-weight: normal !important; 
 }
+/* ========================================
+   CUSTOM: Store Intro Text (Group Summary)
+   ======================================== */
+
+/* Desktop Settings */
+.group-summary {
+    padding: 30px 40px !important; 
+    line-height: 1.8 !important; 
+    text-align: center !important; 
+    max-width: 900px !important;
+    margin: 0 auto 30px auto !important; 
+    background-color: #ffffff !important; 
+    border: 1px solid #e5e5e5 !important; 
+}
+
+/* Mobile Settings (Triggers on screens 768px wide or smaller) */
+@media (max-width: 768px) {
+    .group-summary {
+        /* Shrinks the inside padding so the text has room to breathe */
+        padding: 20px 15px !important; 
+        
+        /* Adds 15px of outside margin on the left/right so the border doesn't touch the glass edge of the phone */
+        margin: 0 15px 30px 15px !important; 
+    }
+}
