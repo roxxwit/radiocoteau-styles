@@ -181,3 +181,37 @@ li.g a {
     /* Optional: If the original hover effect uses a shadow instead of a standard border, use this line too */
     box-shadow: 0 0 5px rgba(122, 45, 45, 0.5) !important; 
 }
+/* ========================================
+   CUSTOM: Checkout Numbered Step Headers
+   ======================================== */
+
+app-checkout h3,
+.checkout h3.d-flex {
+    /* Changed to Times New Roman */
+    font-family: "Times New Roman", Times, serif !important; 
+    font-size: 18px !important;              
+    font-weight: normal !important;             
+    color: #333333 !important;   
+    text-transform: uppercase !important;            
+}
+
+app-checkout h3.active.selected {
+    color: #7a2d2d !important; 
+}
+/* ========================================
+   CUSTOM: Primary Button Text Styling
+   ======================================== */
+
+.btn-primary {
+    /* Changes the font type. I used Times New Roman here to match your recent checkout step changes, but you can swap this to var(--font-nav) if you want the Bank Gothic font! */
+    font-family: "Times New Roman", Times, serif !important; 
+    
+    /* Adjust this number to make the text larger or smaller */
+    font-size: 14px !important; 
+    
+    /* Optional: Forces the text to be all-caps if it isn't already */
+    text-transform: uppercase !important;
+    
+    /* Optional: Makes the text bold, change to 'normal' if you want it thinner */
+    font-weight: normal !important; 
+}
