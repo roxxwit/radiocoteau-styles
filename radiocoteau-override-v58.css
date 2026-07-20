@@ -379,7 +379,7 @@ app-checkout div:has(textarea#fcNotes) {
 
 /* 3. Floats our fake placeholder text directly over the box */
 app-checkout div:has(textarea#fcNotes)::before {
-    content: " Enter your gift note" !important;
+    content: "Please leave any special instructions or a gift note for your order here." !important;
     position: absolute !important;
     top: 15px !important; 
     left: 30px !important; 
