@@ -372,13 +372,13 @@ app-checkout textarea#fcNotes::placeholder {
     color: transparent !important;
 }
 
-/* 2. Turns the text box's wrapper into a staging ground */
-app-checkout div:has(textarea#fcNotes) {
+/* 2. Turns ONLY the immediate wrapper into a staging ground */
+app-checkout div:has(> textarea#fcNotes) {
     position: relative !important;
 }
 
 /* 3. Floats our fake placeholder text directly over the box */
-app-checkout div:has(textarea#fcNotes)::before {
+app-checkout div:has(> textarea#fcNotes)::before {
     content: "Please leave any special instructions or a gift note for your order here." !important;
     position: absolute !important;
     top: 15px !important; 
@@ -389,7 +389,7 @@ app-checkout div:has(textarea#fcNotes)::before {
 }
 
 /* 4. Hides our fake text as soon as the customer clicks or types */
-app-checkout div:has(textarea#fcNotes:focus)::before,
-app-checkout div:has(textarea#fcNotes:not(:placeholder-shown))::before {
+app-checkout div:has(> textarea#fcNotes:focus)::before,
+app-checkout div:has(> textarea#fcNotes:not(:placeholder-shown))::before {
     display: none !important;
 }
