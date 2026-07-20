@@ -228,6 +228,44 @@ app-promo-code,
     display: none !important; 
 }
 /* ========================================
+   CUSTOM: Hide "Apply Coupon" in Cart Review
+   ======================================== */
+
+.coupon-code {
+    display: none !important;
+}
+
+/* ========================================
+   CUSTOM: Cart Review - Product Title Styling
+   ======================================== */
+
+h3.product-title {
+    font-family: "Times New Roman", Times, serif !important;
+    font-size: 18px !important; /* Adjust size as needed */
+    color: #333333 !important; 
+    font-weight: bold !important; /* Change to 'normal' or '600' if you prefer */
+}
+
+/* ========================================
+   CUSTOM: Cart Review - QTY Selector Button
+   ======================================== */
+
+/* Targets the quantity button inside the product list */
+.product-qty button {
+    font-family: "Times New Roman", Times, serif !important;
+    font-size: 16px !important;
+    
+    /* Changes the default blue text to your dark gray */
+    color: #333333 !important; 
+    
+    /* Changes the light gray background to clean white */
+    background-color: #ffffff !important; 
+    
+    /* Optional: Makes the border match your product cards */
+    border: 1px solid var(--color-border-light) !important; 
+    border-radius: 4px !important;
+}
+/* ========================================
    CUSTOM: Universal Button Styling (Cart, Checkout, Sign-In)
    ======================================== */
 
