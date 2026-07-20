@@ -285,25 +285,6 @@ div[class*="giftoptions"],
 div[class*="gift-options"] {
     display: none !important;
 }
-
-/* ========================================
-   CUSTOM: Bulletproof "GIFT NOTE" Rename
-   ======================================== */
-
-/* 1. Vaporize ANY div or span Angular tries to generate inside the header */
-.ordernotes h3 div,
-.ordernotes h3 span {
-    display: none !important; 
-}
-
-/* 2. Inject "GIFT NOTE" directly into the completely empty h3 */
-.ordernotes h3::after {
-    content: "GIFT NOTE" !important;
-    display: inline-block !important;
-    font-size: 14px !important; 
-    text-transform: uppercase !important;
-    font-weight: bold !important; 
-}
 /* ========================================
    CUSTOM: Universal Button Styling (Cart, Checkout, Sign-In)
    ======================================== */
@@ -383,78 +364,6 @@ app-checkout h3.product-title {
    
 }
 /* ========================================
-   CUSTOM: Bulletproof "GIFT NOTE" Rename (Active State Fix)
-   ======================================== */
-
-/* Increased specificity to overpower OrderPort's active state !important rules */
-app-checkout .ordernotes h3,
-.checkout .ordernotes h3 {
-    font-size: 0px !important; 
-}
-
-app-checkout .ordernotes h3::after,
-.checkout .ordernotes h3::after {
-    content: "GIFT NOTE" !important;
-    font-size: 14px !important; 
-    text-transform: uppercase !important;
-    font-weight: bold !important; 
-}
-
-/* ========================================
-   CUSTOM: Rename "SAVE ORDER NOTES" Button
-   ======================================== */
-   
-.ordernotes button.btn-primary {
-    /* Shrinks the original text to nothing */
-    font-size: 0px !important;
-}
-
-.ordernotes button.btn-primary::after {
-    /* Injects the new text onto the button */
-    content: "SAVE GIFT NOTE" !important;
-    font-size: 14px !important;
-}
-
-/* ========================================
-   CUSTOM: Bulletproof "GIFT NOTE" Rename
-   ======================================== */
-
-/* 1. Explicitly hide the span holding the number "4" */
-app-checkout .ordernotes h3 span.mr-2 {
-    display: none !important;
-}
-
-/* 2. Shrink the raw "Order Notes" text to nothing, regardless of active/inactive state */
-app-checkout .ordernotes h3 {
-    font-size: 0px !important; 
-}
-
-/* 3. Inject "GIFT NOTE" and bring its specific font size back up to 14px */
-app-checkout .ordernotes h3::after {
-    content: "GIFT NOTE" !important;
-    font-size: 14px !important; 
-    color: #333333 !important; /* Adjust if your header text is slightly darker/lighter */
-    text-transform: uppercase !important;
-    font-weight: bold !important; 
-}
-/* ========================================
-   CUSTOM: Rename "SAVE ORDER NOTES" Button
-   ======================================== */
-   
-/* 1. Shrinks the raw text inside the button to nothing and makes it invisible */
-app-checkout .ordernotes button.btn-primary {
-    font-size: 0px !important;
-    color: transparent !important;
-}
-
-/* 2. Injects the new text directly into the button */
-app-checkout .ordernotes button.btn-primary::after {
-    content: "SAVE GIFT NOTE" !important;
-    font-size: 14px !important;
-    color: #ffffff !important;
-    text-transform: uppercase !important;
-}
-/* ========================================
    CUSTOM: Placeholder Hack ("Enter your gift note")
    ======================================== */
 
@@ -473,7 +382,7 @@ app-checkout div:has(textarea#fcNotes)::before {
     content: " Enter your gift note" !important;
     position: absolute !important;
     top: 15px !important; 
-    left: 15px !important; 
+    left: 30px !important; 
     color: #6c757d !important; 
     font-size: 16px !important;
     pointer-events: none !important; 
