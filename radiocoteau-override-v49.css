@@ -242,15 +242,14 @@ app-promo-code,
 h3.product-title {
     font-family: "Times New Roman", Times, serif !important;
     font-size: 16px !important; 
-    color: #333333 !important; 
-    font-weight: 600 !important; 
+    color: #5F5F5F !important; 
+    font-weight: normal !important; 
 }
 
 /* ========================================
    CUSTOM: Cart Review - QTY Selector Button
    ======================================== */
 
-/* Targets the quantity button inside the product list */
 .product-qty button {
     font-family: "Times New Roman", Times, serif !important;
     font-size: 16px !important;
