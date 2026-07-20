@@ -241,9 +241,9 @@ app-promo-code,
 
 h3.product-title {
     font-family: "Times New Roman", Times, serif !important;
-    font-size: 18px !important; /* Adjust size as needed */
+    font-size: 16px !important; 
     color: #333333 !important; 
-    font-weight: bold !important; /* Change to 'normal' or '600' if you prefer */
+    font-weight: 600 !important; 
 }
 
 /* ========================================
