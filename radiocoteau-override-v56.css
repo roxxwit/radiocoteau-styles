@@ -416,35 +416,82 @@ app-checkout .ordernotes h3::after,
 }
 
 /* ========================================
-   CUSTOM: Placeholder Hack ("Enter your gift note")
+   CUSTOM: Bulletproof "GIFT NOTE" Rename (Nuclear Specificity)
    ======================================== */
 
-/* 1. Makes the original placeholder text completely invisible */
-textarea#fcNotes::placeholder {
+/* Forces the original text to 0px by overpowering OrderPort's default d-flex classes */
+body app-checkout .ordernotes h3.font-weight-bold.d-flex {
+    font-size: 0px !important; 
     color: transparent !important;
 }
 
-/* 2. Turns the text box's invisible wrapper into a staging ground */
-div:has(> textarea#fcNotes) {
+/* Injects "GIFT NOTE" and makes it visible again */
+body app-checkout .ordernotes h3.font-weight-bold.d-flex::after {
+    content: "GIFT NOTE" !important;
+    font-size: 14px !important; 
+    color: #333333 !important;
+    text-transform: uppercase !important;
+    font-weight: bold !important; 
+    visibility: visible !important;
+}
+
+
+/* ========================================
+   CUSTOM: Rename "SAVE ORDER NOTES" Button
+   ======================================== */
+   
+/* 1. Shrinks the button text AND hides that sneaky inner span tag */
+body app-checkout .ordernotes button.btn-primary {
+    font-size: 0px !important;
+    color: transparent !important;
+    position: relative !important;
+}
+
+body app-checkout .ordernotes button.btn-primary span {
+    display: none !important;
+}
+
+/* 2. Injects the new text perfectly centered over the button */
+body app-checkout .ordernotes button.btn-primary::after {
+    content: "SAVE GIFT NOTE" !important;
+    font-size: 14px !important;
+    color: #ffffff !important;
+    visibility: visible !important;
+    
+    /* These rules ensure the new text is centered perfectly inside the button */
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    position: absolute !important;
+    top: 0; left: 0; right: 0; bottom: 0;
+}
+/* ========================================
+   CUSTOM: Placeholder Hack ("Enter your gift note")
+   ======================================== */
+
+/* 1. Makes the original placeholder text completely transparent */
+app-checkout textarea#fcNotes::placeholder {
+    color: transparent !important;
+}
+
+/* 2. Turns the text box's wrapper into a staging ground */
+app-checkout div:has(textarea#fcNotes) {
     position: relative !important;
 }
 
 /* 3. Floats our fake placeholder text directly over the box */
-div:has(> textarea#fcNotes)::before {
+app-checkout div:has(textarea#fcNotes)::before {
     content: "Enter your gift note" !important;
     position: absolute !important;
-    top: 14px !important; 
-    left: 20px !important; 
+    top: 15px !important; 
+    left: 15px !important; 
     color: #6c757d !important; 
-    font-family: inherit !important;
     font-size: 16px !important;
-    
-    /* Crucial: Allows the user's mouse click to pass THROUGH this text into the box */
     pointer-events: none !important; 
 }
 
-/* 4. Hides our fake text as soon as the customer clicks in the box or starts typing */
-div:has(> textarea#fcNotes:focus)::before,
-div:has(> textarea#fcNotes:not(:placeholder-shown))::before {
+/* 4. Hides our fake text as soon as the customer clicks or types */
+app-checkout div:has(textarea#fcNotes:focus)::before,
+app-checkout div:has(textarea#fcNotes:not(:placeholder-shown))::before {
     display: none !important;
 }
