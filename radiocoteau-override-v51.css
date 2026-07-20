@@ -265,6 +265,15 @@ h3.product-title {
     border-radius: 4px !important;
 }
 /* ========================================
+   CUSTOM: Hide Buggy/Empty Gift Options Row
+   ======================================== */
+
+/* This tells the browser: If the giftoptions row does NOT have the actual 
+   app-gift-options component inside it, hide the whole row. */
+.giftoptions:not(:has(app-gift-options)) {
+    display: none !important;
+}
+/* ========================================
    CUSTOM: Universal Button Styling (Cart, Checkout, Sign-In)
    ======================================== */
 
@@ -340,4 +349,5 @@ app-checkout h3.product-title {
         padding: 20px 15px !important; 
         margin: 0 15px 15px 15px !important; 
     }
+   
 }
