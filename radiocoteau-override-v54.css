@@ -265,11 +265,24 @@ h3.product-title {
     border-radius: 4px !important;
 }
 /* ========================================
-   CUSTOM: Hide Checkout Step Numbers
+   CUSTOM: Hide Checkout Step Numbers Globally
    ======================================== */
 
-/* Targets the 'mr-2' spacing class that holds the numbers (1, 2, 3...) inside all step headers */
-app-checkout h3 .mr-2 {
+/* Targets the specific spacing class that holds the numbers (1, 2, 3...) inside all step headers */
+app-checkout h3 .mr-2,
+.checkout h3 .mr-2 {
+    display: none !important;
+}
+
+/* ========================================
+   CUSTOM: Permanently Nuke Gift Options
+   ======================================== */
+
+.giftoptions,
+.gift-options,
+app-gift-options,
+div[class*="giftoptions"],
+div[class*="gift-options"] {
     display: none !important;
 }
 
@@ -277,16 +290,19 @@ app-checkout h3 .mr-2 {
    CUSTOM: Bulletproof "GIFT NOTE" Rename
    ======================================== */
 
-/* 1. Hides ALL original text and tags inside the header, ignoring active/inactive states */
-.ordernotes h3 {
-    font-size: 0px !important; 
+/* 1. Vaporize ANY div or span Angular tries to generate inside the header */
+.ordernotes h3 div,
+.ordernotes h3 span {
+    display: none !important; 
 }
 
-/* 2. Injects "GIFT NOTE" cleanly into the empty space */
+/* 2. Inject "GIFT NOTE" directly into the completely empty h3 */
 .ordernotes h3::after {
     content: "GIFT NOTE" !important;
+    display: inline-block !important;
     font-size: 14px !important; 
     text-transform: uppercase !important;
+    font-weight: bold !important; 
 }
 /* ========================================
    CUSTOM: Universal Button Styling (Cart, Checkout, Sign-In)
