@@ -265,13 +265,29 @@ h3.product-title {
     border-radius: 4px !important;
 }
 /* ========================================
-   CUSTOM: Hide Buggy/Empty Gift Options Row
+   CUSTOM: Permanently Hide Gift Options
    ======================================== */
 
-/* This tells the browser: If the giftoptions row does NOT have the actual 
-   app-gift-options component inside it, hide the whole row. */
-.giftoptions:not(:has(app-gift-options)) {
+.giftoptions {
     display: none !important;
+}
+
+/* ========================================
+   CUSTOM: Rename "Order Notes" to "GIFT NOTE"
+   ======================================== */
+
+/* 1. Hide the original "Order Notes" text by making it 0 pixels */
+.ordernotes h3 div:last-child {
+    font-size: 0px !important; 
+}
+
+/* 2. Inject the new text in the exact same spot */
+.ordernotes h3 div:last-child::after {
+    content: "GIFT NOTE" !important;
+    
+    /* Matches the 14px size we set for other checkout h3 tags earlier */
+    font-size: 14px !important; 
+    text-transform: uppercase !important;
 }
 /* ========================================
    CUSTOM: Universal Button Styling (Cart, Checkout, Sign-In)
