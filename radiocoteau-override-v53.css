@@ -206,7 +206,7 @@ app-checkout h3,
     font-weight: normal !important;             
     color: #333333 !important;   
     text-transform: uppercase !important;
-    font-weight: 600 semibold !important; 
+    font-weight: 600 !important; 
 }
 
 app-checkout h3.active.selected {
@@ -265,27 +265,26 @@ h3.product-title {
     border-radius: 4px !important;
 }
 /* ========================================
-   CUSTOM: Permanently Hide Gift Options
+   CUSTOM: Hide Checkout Step Numbers
    ======================================== */
 
-.giftoptions {
+/* Targets the 'mr-2' spacing class that holds the numbers (1, 2, 3...) inside all step headers */
+app-checkout h3 .mr-2 {
     display: none !important;
 }
 
 /* ========================================
-   CUSTOM: Rename "Order Notes" to "GIFT NOTE"
+   CUSTOM: Bulletproof "GIFT NOTE" Rename
    ======================================== */
 
-/* 1. Hide the original "Order Notes" text by making it 0 pixels */
-.ordernotes h3 div:last-child {
+/* 1. Hides ALL original text and tags inside the header, ignoring active/inactive states */
+.ordernotes h3 {
     font-size: 0px !important; 
 }
 
-/* 2. Inject the new text in the exact same spot */
-.ordernotes h3 div:last-child::after {
+/* 2. Injects "GIFT NOTE" cleanly into the empty space */
+.ordernotes h3::after {
     content: "GIFT NOTE" !important;
-    
-    /* Matches the 14px size we set for other checkout h3 tags earlier */
     font-size: 14px !important; 
     text-transform: uppercase !important;
 }
