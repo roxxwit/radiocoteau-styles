@@ -1,5 +1,5 @@
 /* ========================================
-   CUSTOM: Sticky Product Bottle on Details Page
+   Sticky Product Bottle on Details Page
    ======================================== */
 
 #tabs-product .prod-image {
@@ -19,7 +19,7 @@
     }
 }
 /* ========================================
-   CUSTOM: Force Left-Align on Mobile
+   Force Left-Align on Mobile
    ======================================== */
 
 @media only screen and (max-width: 768px) {
@@ -28,7 +28,7 @@
     }
 }
 /* ========================================
-   CUSTOM: Fix Mobile Alignment for Reviews Only
+   Fix Mobile Alignment for Reviews Only
    ======================================== */
 
 @media only screen and (max-width: 768px) {
@@ -41,7 +41,7 @@
     }
 }
 /* ========================================
-   CUSTOM: Rename Product Details Headers
+   Rename Product Details Headers
    ======================================== */
 
 /* 1. Hide original text */
@@ -70,17 +70,17 @@
 #tab_overview span.other-notes-hdr::before { content: "CELLAR NOTES" !important; }
 
 /* ========================================
-   CUSTOM: Increase Login Page Font Size & Color
+   Increase Login Page Font Size & Color
    ======================================== */
 
 .auth p {
-    font-size: 18px !important;   /* Bumps size up for readability */
-    line-height: 1.6 !important;  /* Adds extra breathing room */
-    color: #333333 !important;    /* Change this hex code to your preferred color */
+    font-size: 18px !important;   
+    line-height: 1.6 !important;  
+    color: #333333 !important;   
 }
 
 /* ========================================
-   CUSTOM: Uniform Color for Login Elements
+   Uniform Color for Login Elements
    ======================================== */
 
 .auth h1,
@@ -90,7 +90,7 @@
 }
 
 /* ========================================
-   CUSTOM: Force Login Buttons back to White
+   Force Login Buttons back to White
    ======================================== */
 
 /* This overrides the link color specifically for buttons */
@@ -100,102 +100,93 @@
 }
 
 /* ========================================
-   CUSTOM: Change "Create an Account" Button Color
+   Change "Create an Account" Button Color
    ======================================== */
 
 /* Adjust the background and border color here */
 .auth .btn-secondary {
     background-color: #4c2929 !important;
     border-color: #cccccc !important;
-    color: #ffffff !important; /* Ensures text stays white */
+    color: #ffffff !important; 
 }
 /* ========================================
-   CUSTOM: Style "CONTINUE" Button
+   Style "CONTINUE" Button
    ======================================== */
 
 .auth .btn-primary {
-    background-color: #351a1a !important; /* Change this to your desired color */
+    background-color: #351a1a !important; 
     border-color: #cccccc !important;
     color: #ffffff !important;
 }
 /* ========================================
-   CUSTOM: Force Nav Bar to the Front
+   Force Nav Bar to the Front
    ======================================== */
 
 #HeaderContainer, 
 header,
 .site-header {
-    position: relative; /* Required for z-index to work */
-    z-index: 99999 !important; /* Forces it to the very front */
+    position: relative; 
+    z-index: 99999 !important; 
 }
 /* ========================================
-   CUSTOM: Force Cart Summary to Solid White & Fix Scroll
+   Force Cart Summary to Solid White & Fix Scroll
    ======================================== */
 
 .cart-summary {
     background-color: #ffffff !important;
     background-image: none !important;
     opacity: 1 !important; 
-    z-index: 10 !important; /* Lowers it so it slides under the nav */
-    padding: 15px !important; /* Optional: adds a little breathing room inside the white box */
+    z-index: 10 !important; 
+    padding: 15px !important; 
 }
 /* ========================================
-   CUSTOM: Style Product Names
+   Style Product Names
    ======================================== */
 
 .prod-name a.prod-title {
-    font-size: 19px !important; /* Adjust this number to make it larger or smaller */
-    color: #333333 !important;  /* Change this hex code to your preferred color */
+    font-size: 19px !important; 
+    color: #333333 !important;  
     font-weight: semibold !important; 
 }
 /* ========================================
-   CUSTOM: Style Product Appellation/Subtitle
+   Style Product Appellation/Subtitle
    ======================================== */
 
 .prod-content em {
-   font-size: 16px !important; /* Adjust this number to make it larger or smaller */ 
-   color: #333333 !important; /* Make sure this matches your product name color */
+   font-size: 16px !important; 
+   color: #333333 !important; 
    font-weight: semibold !important; 
 }
 /* ========================================
-   CUSTOM: Product List Price Styling
+   Product List Price Styling
    ======================================== */
 
 .productItem .price {
-    /* Adjust this number to your liking (originally 22px) */
     font-size: 16px !important;     
-    
-    /* Changes it from 700 (heavy bold) to standard weight */
     font-weight: semibold !important; 
 }
 /* ========================================
-   CUSTOM: Style Left Sidebar Menu (Available Wines)
+   Style Left Sidebar Menu (Available Wines)
    ======================================== */
-
-/* Centers the text */
 li.g {
     text-align: center !important;
 }
-
-/* Changes the font to match the WINES header */
 li.g a {
     font-family: var(--font-nav) !important; /* Pulls in Bank Gothic */
-    text-transform: uppercase !important;    /* Forces all-caps to match */
-    letter-spacing: 1px !important;          /* Gives it a little breathing room */
-    font-size: 14px !important;              /* Adjust this if it looks too big/small */
+    text-transform: uppercase !important;   
+    letter-spacing: 1px !important;         
+    font-size: 14px !important;             
 }
 /* ========================================
-   CUSTOM: Product Container Hover Border
+   Product Container Hover Border
    ======================================== */
 
 .productItem:hover .pi-content {
-    border-color: #dbdbdb !important; /* Change this hex code to your preferred color */
-    
-    /* Optional: If the original hover effect uses a shadow instead of a standard border, use this line too */
+    border-color: #dbdbdb !important; 
     box-shadow: 0 0 3px rgba(240, 240, 240, 0.2) !important; 
 }
 /* ========================================
-   CUSTOM: Checkout Numbered Step Headers
+   Checkout Numbered Step Headers
    ======================================== */
 
 app-checkout h3,
@@ -213,14 +204,14 @@ app-checkout h3.active.selected {
     color: #7a2d2d !important; 
 }
 /* ========================================
-   CUSTOM: Force Hide Promotions Section
+   Force Hide Promotions Section
    ======================================== */
 
 app-payment-methods .other {
     display: none !important; 
 }
 /* ========================================
-   CUSTOM: Force Hide All Promo Code Components
+   Force Hide All Promo Code Components
    ======================================== */
 
 app-promo-code,
@@ -228,7 +219,7 @@ app-promo-code,
     display: none !important; 
 }
 /* ========================================
-   CUSTOM: Hide "Apply Coupon" in Cart Review
+   Hide "Apply Coupon" in Cart Review
    ======================================== */
 
 .coupon-code {
@@ -236,7 +227,7 @@ app-promo-code,
 }
 
 /* ========================================
-   CUSTOM: Cart Review - Product Title Styling
+   Cart Review - Product Title Styling
    ======================================== */
 
 h3.product-title {
@@ -247,35 +238,27 @@ h3.product-title {
 }
 
 /* ========================================
-   CUSTOM: Cart Review - QTY Selector Button
+   Cart Review - QTY Selector Button
    ======================================== */
 
 .product-qty button {
     font-family: "Times New Roman", Times, serif !important;
     font-size: 16px !important;
-    
-    /* Changes the default blue text to your dark gray */
     color: #333333 !important; 
-    
-    /* Changes the light gray background to clean white */
     background-color: #ffffff !important; 
-    
-    /* Optional: Makes the border match your product cards */
     border: 1px solid var(--color-border-light) !important; 
     border-radius: 4px !important;
 }
 /* ========================================
-   CUSTOM: Hide Checkout Step Numbers Globally
+   Hide Checkout Step Numbers Globally
    ======================================== */
-
-/* Targets the specific spacing class that holds the numbers (1, 2, 3...) inside all step headers */
 app-checkout h3 .mr-2,
 .checkout h3 .mr-2 {
     display: none !important;
 }
 
 /* ========================================
-   CUSTOM: Permanently Nuke Gift Options
+   Permanently Nuke Gift Options
    ======================================== */
 
 .giftoptions,
@@ -286,9 +269,8 @@ div[class*="gift-options"] {
     display: none !important;
 }
 /* ========================================
-   CUSTOM: Universal Button Styling (Cart, Checkout, Sign-In)
+   Universal Button Styling (Cart, Checkout, Sign-In)
    ======================================== */
-
 .btn.btn-primary,
 .btn.btn-secondary,
 .btn.sign-in,
@@ -300,25 +282,21 @@ div[class*="gift-options"] {
     font-weight: normal !important; 
 }
 /* ========================================
-   CUSTOM: Checkout Product Title Casing
+   Checkout Product Title Casing
    ======================================== */
-
 app-checkout h3.product-title {
-    text-transform: none !important; /* Removes the all-caps and restores the original casing */
+    text-transform: none !important; 
 }
 /* ========================================
-   CUSTOM: Product List Price Styling
+   Product List Price Styling
    ======================================== */
 
 .productItem .price {
-    /* Adjust this number to your liking (originally 22px) */
     font-size: 16px !important;     
-    
-    /* Changes it from 700 (heavy bold) to standard weight */
     font-weight: 400 !important; 
 }
 /* ========================================
-   CUSTOM: Store Intro Text (Group Summary)
+   Store Intro Text (Group Summary)
    ======================================== */
 
 /* Desktop Settings */
@@ -329,20 +307,11 @@ app-checkout h3.product-title {
     color: #333333 !important; 
     text-transform: none !important;
     font-style: normal !important;
-    
-    /* FIX: Removed the invalid 'semibold' keyword */
     font-weight: normal !important; 
-    
     line-height: 1.8 !important; 
     text-align: justify !important; 
-    
-    /* ALIGNMENT & GAP */
     margin: 0 auto -40px auto !important; 
-    
-    /* TRANSLUCENT BACKGROUND */
     background-color: rgba(255, 255, 255, 0.4) !important; 
-    
-    /* Top & Bottom Border Only */ 
     border: none !important; 
     border-top: 2px solid var(--color-border-light) !important;
     border-bottom: 2px solid var(--color-border-light) !important; 
@@ -364,7 +333,7 @@ app-checkout h3.product-title {
    
 }
 /* ========================================
-   CUSTOM: Placeholder Hack ("Enter your gift note")
+   Placeholder ("Enter your gift note")
    ======================================== */
 
 /* 1. Makes the original placeholder text completely transparent */
@@ -377,12 +346,19 @@ app-checkout div:has(> textarea#fcNotes) {
     position: relative !important;
 }
 
-/* 3. Floats our fake placeholder text directly over the box */
+/* 3. Floats our fake placeholder text directly over the box and forces wrapping */
 app-checkout div:has(> textarea#fcNotes)::before {
     content: "Please leave any special instructions or a gift note for your order here." !important;
     position: absolute !important;
     top: 15px !important; 
     left: 30px !important; 
+    
+    /* ADDED: Gives the text a right-side boundary so it doesn't overflow the box */
+    right: 30px !important; 
+    
+    /* ADDED: Forces the text to wrap to a new line when it hits the right boundary */
+    white-space: normal !important; 
+    
     color: #6c757d !important; 
     font-size: 16px !important;
     pointer-events: none !important; 
@@ -394,7 +370,7 @@ app-checkout div:has(> textarea#fcNotes:not(:placeholder-shown))::before {
     display: none !important;
 }
 /* ========================================
-   CUSTOM: Force Pop-up Modal Over Nav Bar
+   Force Pop-up Modal Over Nav Bar
    ======================================== */
 
 /* 1. Pushes the dark background overlay above the header */
@@ -409,7 +385,7 @@ modal-container,
     z-index: 999999 !important;
 }
 /* ========================================
-   CUSTOM: Highlight Active Checkout Sections
+   Highlight Active Checkout Sections
    ======================================== */
 
 /* Targets the expanded 'card' container for whichever step is currently active */
