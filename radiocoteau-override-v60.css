@@ -393,3 +393,18 @@ app-checkout div:has(> textarea#fcNotes:focus)::before,
 app-checkout div:has(> textarea#fcNotes:not(:placeholder-shown))::before {
     display: none !important;
 }
+/* ========================================
+   CUSTOM: Force Pop-up Modal Over Nav Bar
+   ======================================== */
+
+/* 1. Pushes the dark background overlay above the header */
+bs-modal-backdrop,
+.modal-backdrop {
+    z-index: 999998 !important;
+}
+
+/* 2. Pushes the actual pop-up window above the overlay and header */
+modal-container,
+.modal {
+    z-index: 999999 !important;
+}
