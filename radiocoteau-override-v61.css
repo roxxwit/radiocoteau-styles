@@ -408,3 +408,21 @@ modal-container,
 .modal {
     z-index: 999999 !important;
 }
+/* ========================================
+   CUSTOM: Highlight Active Checkout Sections
+   ======================================== */
+
+/* Targets the expanded 'card' container for whichever step is currently active */
+app-checkout .card {
+    /* Changes the translucent background to solid white */
+    background-color: #ffffff !important; 
+    
+    /* Adds a subtle border to define the edges clearly */
+    border: 1px solid var(--color-border-light, #e0e0e0) !important; 
+    
+    /* Optional: Adds a soft drop shadow to make the active section lift off the page */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important; 
+    
+    /* Ensures the solid background doesn't clip the rounded corners */
+    border-radius: 4px !important; 
+}
