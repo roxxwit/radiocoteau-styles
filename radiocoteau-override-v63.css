@@ -317,6 +317,29 @@ app-checkout h3.product-title {
     border-bottom: 2px solid var(--color-border-light) !important; 
     border-radius: 0 !important; 
 }
+/* ========================================
+   Store Intro Text (Group Summary / Shop-Holder)
+   ======================================== */
+
+/* Desktop Settings */
+.group-summary, 
+.shop-holder > p:first-of-type {
+    padding: 30px 40px !important;
+    font-family: "Times New Roman", Times, serif !important; 
+    font-size: 16px !important;  
+    color: #333333 !important; 
+    text-transform: none !important;
+    font-style: normal !important;
+    font-weight: normal !important; 
+    line-height: 1.8 !important; 
+    text-align: justify !important; 
+    margin: 0 auto -40px auto !important; 
+    background-color: rgba(255, 255, 255, 0.4) !important; 
+    border: none !important; 
+    border-top: 2px solid var(--color-border-light) !important;
+    border-bottom: 2px solid var(--color-border-light) !important; 
+    border-radius: 0 !important; 
+}
 
 /* Force Color on Inner Text Elements */
 .group-summary p,
