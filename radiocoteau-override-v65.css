@@ -309,7 +309,7 @@ app-checkout h3.product-title {
     font-style: normal !important;
     font-weight: normal !important; 
     line-height: 1.8 !important; 
-    text-align: justify !important; 
+    text-align: center !important; 
     margin: 0 auto -40px auto !important; 
     background-color: rgba(255, 255, 255, 0.4) !important; 
     border: none !important; 
@@ -332,7 +332,7 @@ app-checkout h3.product-title {
     font-style: normal !important;
     font-weight: normal !important; 
     line-height: 1.8 !important; 
-    text-align: justify !important; 
+    text-align: center !important; 
     margin: 0 auto -40px auto !important; 
     background-color: rgba(255, 255, 255, 0.4) !important; 
     border: none !important; 
