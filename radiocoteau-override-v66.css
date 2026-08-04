@@ -309,7 +309,7 @@ app-checkout h3.product-title {
     font-style: normal !important;
     font-weight: normal !important; 
     line-height: 1.8 !important; 
-    text-align: center !important; 
+    text-align: justify !important; 
     margin: 0 auto -40px auto !important; 
     background-color: rgba(255, 255, 255, 0.4) !important; 
     border: none !important; 
@@ -332,13 +332,17 @@ app-checkout h3.product-title {
     font-style: normal !important;
     font-weight: normal !important; 
     line-height: 1.8 !important; 
-    text-align: center !important; 
+    text-align: justify !important; 
     margin: 0 auto -40px auto !important; 
     background-color: rgba(255, 255, 255, 0.4) !important; 
     border: none !important; 
     border-top: 2px solid var(--color-border-light) !important;
     border-bottom: 2px solid var(--color-border-light) !important; 
     border-radius: 0 !important; 
+}
+/* Product Card Background Styling */
+.productItem {
+    background-color: rgba(255, 255, 255, 0.4) !important; 
 }
 
 /* Force Color on Inner Text Elements */
