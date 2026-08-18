@@ -445,3 +445,9 @@ app-checkout .card {
         padding-bottom: 20px; /* Gives the Add to Cart button room to breathe */
     }
 }
+/* =========================================================
+   CHECKOUT FIX: DATEPICKER Z-INDEX OVERRIDE
+   ========================================================= */
+bs-datepicker-container {
+    z-index: 1000000 !important;
+}
