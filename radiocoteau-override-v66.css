@@ -429,3 +429,25 @@ app-checkout .card {
     /* Ensures the solid background doesn't clip the rounded corners */
     border-radius: 4px !important; 
 }
+/* Fix the invalid font-weight rule seen in DevTools */
+.prod-content em {
+    font-size: 16px !important;
+    color: #333333 !important;
+    font-weight: 600 !important; /* Changed from 'semibold' to a valid numeric weight */
+}
+
+/* Target small tablets and mobile devices based on OrderPort's breakpoints */
+@media (max-width: 768px) {
+    /* 1. Force the descriptive text to render */
+    .prod-content {
+        display: block !important;
+        margin-bottom: 15px; /* Add spacing before the price */
+    }
+
+    /* 2. Override OrderPort's hardcoded inline height so the card can stretch */
+    .pi-content {
+        height: auto !important;
+        min-height: 557px; /* Maintains the minimum height to prevent layout jumping */
+        padding-bottom: 20px; /* Gives the Add to Cart button room to breathe */
+    }
+}
