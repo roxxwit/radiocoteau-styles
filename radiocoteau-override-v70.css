@@ -451,3 +451,12 @@ app-checkout .card {
 bs-datepicker-container {
     z-index: 1000000 !important;
 }
+
+/* =========================================================
+   LIBRARY MEMBERSHIP: HIDE JOIN NOW!
+   ========================================================= */
+.club-registration-header h3,
+.club-join-container .sub-heading,
+.wine-club-register h2 {
+  display: none !important;
+}
