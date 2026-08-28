@@ -455,8 +455,7 @@ bs-datepicker-container {
 /* =========================================================
    LIBRARY MEMBERSHIP: HIDE JOIN NOW!
    ========================================================= */
-.club-registration-header h3,
-.club-join-container .sub-heading,
-.wine-club-register h2 {
+.join-wine-club-content .header h1 span {
   display: none !important;
 }
+
