@@ -512,3 +512,23 @@ section.mobile-navigation li {
     letter-spacing: 1px !important;
     padding-bottom: 15px !important; /* Spaces the list items out */
 }
+/* 1. Force left alignment and remove the horizontal lines */
+section.mobile-navigation ul, 
+section.mobile-navigation li,
+section.mobile-navigation a {
+    text-align: left !important;
+    border: none !important; 
+    list-style-type: none !important;
+    display: block !important;
+}
+
+/* 2. Indent the 2nd-level sub-menus (e.g., Chardonnay) */
+section.mobile-navigation ul ul {
+    padding-left: 20px !important; 
+    margin-top: 5px !important;
+}
+
+/* 3. Indent the 3rd-level sub-menus (e.g., Wingtine) even further */
+section.mobile-navigation ul ul ul {
+    padding-left: 20px !important;
+}
