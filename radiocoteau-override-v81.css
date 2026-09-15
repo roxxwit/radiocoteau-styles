@@ -587,3 +587,8 @@ section.mobile-navigation ul ul {
 section.mobile-navigation ul ul ul {
     padding-left: 10px !important;
 }
+/* Tighten the vertical spacing between menu links */
+section.mobile-navigation .main-menu a {
+    padding-top: 6px !important; 
+    padding-bottom: 6px !important;
+}
