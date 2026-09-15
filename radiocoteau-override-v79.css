@@ -554,14 +554,10 @@ section.mobile-navigation .nav-logo-wrapper {
     margin-bottom: 20px !important; /* Adds breathing room below the logo */
 }
 
-/* 2. Make the logo image larger */
-section.mobile-navigation .nav-logo-wrapper img {
-    width: 240px !important; /* Increased size. Adjust up or down as needed */
-    height: auto !important;
-}
-/* 3. Revert menu font size back to 16px */
+/*Decrease the font size and reduce the vertical spacing */
 section.mobile-navigation .main-menu a {
-    font-size: 14px !important; 
+    font-size: 16px !important; /
+    padding: 0px 0px !important; /* Reduced from 16px top / 15px bottom */
 }
 /* Fix the link text color so it isn't blue */
 section.mobile-navigation .main-menu a {
