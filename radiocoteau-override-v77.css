@@ -555,3 +555,18 @@ section.mobile-navigation h3 {
     font-size: 22px !important; /* Adjust this number to make it larger or smaller */
     padding-bottom: 15px !important;
 }
+/* 1. Increase the size of the logo image */
+section.mobile-navigation .nav-logo-wrapper img {
+    width: 180px !important; /* Increased from ~130px. Adjust this number as needed */
+    height: auto !important;
+}
+
+/* 2. Decrease the font size and reduce the vertical spacing */
+section.mobile-navigation .main-menu a {
+    font-size: 13px !important; /* Decreased from 16px */
+    padding: 8px 12px !important; /* Reduced from 16px top / 15px bottom */
+}
+/* Fix the link text color so it isn't blue */
+section.mobile-navigation .main-menu a {
+    color: #ffffff !important; 
+}
