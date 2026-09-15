@@ -563,3 +563,27 @@ section.mobile-navigation .main-menu a {
 section.mobile-navigation .main-menu a {
     color: #ffffff !important; 
 }
+/* 1. Force the inner logo container to center its contents */
+section.mobile-navigation .nav-logo {
+    flex-grow: 1 !important;
+    display: flex !important;
+    justify-content: center !important;
+    width: 100% !important;
+}
+
+/* 2. Enlarge the logo and bypass max-width restrictions */
+section.mobile-navigation .nav-logo img {
+    width: 280px !important; /* Bumped up significantly */
+    max-width: none !important; 
+    height: auto !important;
+}
+/* 3. Reduce the 2nd-level sub-menu indentation */
+section.mobile-navigation ul ul {
+    padding-left: 10px !important; 
+    margin-top: 5px !important;
+}
+
+/* 4. Reduce the 3rd-level sub-menu indentation */
+section.mobile-navigation ul ul ul {
+    padding-left: 10px !important;
+}
