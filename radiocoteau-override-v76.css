@@ -532,3 +532,26 @@ section.mobile-navigation ul ul {
 section.mobile-navigation ul ul ul {
     padding-left: 20px !important;
 }
+/* 1. Sync mobile fonts to match your desktop navigation exactly */
+section.mobile-navigation a, 
+section.mobile-navigation li {
+    font-family: var(--font-nav) !important;
+    font-weight: 300 !important;
+    letter-spacing: 1px !important;
+}
+
+/* 2. Remove the divider line under the logo */
+section.mobile-navigation div, 
+section.mobile-navigation hr {
+    border-bottom: none !important;
+    border: none !important;
+}
+
+/* 3. Increase the size of the "RADIO-COTEAU" text */
+/* OrderPort wraps this title in a div or header tag at the very top */
+section.mobile-navigation > div:first-child,
+section.mobile-navigation h2,
+section.mobile-navigation h3 {
+    font-size: 22px !important; /* Adjust this number to make it larger or smaller */
+    padding-bottom: 15px !important;
+}
