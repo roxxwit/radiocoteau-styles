@@ -489,3 +489,26 @@ ul.sub-menu ul {
 ul.sub-menu li:hover > ul {
     display: block;
 }
+/* 1. Remove blue background from OrderPort hamburger button */
+button.js-open-menu.mobile-toggle.burger {
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+/* 2. Style the mobile menu background */
+section.mobile-navigation {
+    background-color: #111111 !important; /* Adjust to match your exact dark hex code */
+    /* Optional: Add padding if the items are too close to the edge */
+    padding: 40px 20px !important; 
+}
+/* 3. Match main website typography (Bank Gothic) */
+section.mobile-navigation a, 
+section.mobile-navigation li {
+    font-family: "Bank Gothic W01", sans-serif !important;
+    font-size: 16px !important;
+    text-transform: uppercase !important;
+    color: #7b8f9e !important; /* Adjust this hex to match your exact blue/gray */
+    text-decoration: none !important;
+    letter-spacing: 1px !important;
+    padding-bottom: 15px !important; /* Spaces the list items out */
+}
