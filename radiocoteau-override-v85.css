@@ -591,12 +591,3 @@ section.mobile-navigation .main-menu a {
     padding-top: 6px !important; 
     padding-bottom: 6px !important;
 }
-/* 1. Hide the nested sub-menus by default */
-section.mobile-navigation ul ul {
-    display: none !important;
-}
-
-/* 2. Reveal the sub-menu when the parent is tapped (sticky hover) */
-section.mobile-navigation li:hover > ul {
-    display: block !important;
-}
