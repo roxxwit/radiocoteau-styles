@@ -591,3 +591,12 @@ section.mobile-navigation .main-menu a {
     padding-top: 6px !important; 
     padding-bottom: 6px !important;
 }
+/* 1. Hide all nested sub-menus by default */
+section.mobile-navigation ul ul {
+    display: none !important; 
+}
+
+/* 2. Create an override class to reveal them */
+section.mobile-navigation ul ul.is-open {
+    display: block !important;
+}
