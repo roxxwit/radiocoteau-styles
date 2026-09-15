@@ -591,3 +591,19 @@ section.mobile-navigation .main-menu a {
     padding-top: 6px !important; 
     padding-bottom: 6px !important;
 }
+/* 1. Hide the nested sub-menus by default */
+section.mobile-navigation ul ul {
+    display: none !important;
+}
+
+/* 2. Trick mobile browsers into recognizing plain text as tappable */
+section.mobile-navigation li {
+    cursor: pointer !important; 
+    -webkit-tap-highlight-color: transparent; /* Removes the ugly blue tap flash on mobile */
+}
+
+/* 3. Reveal the sub-menu when the parent text is tapped */
+section.mobile-navigation li:hover > ul,
+section.mobile-navigation li:focus-within > ul {
+    display: block !important;
+}
