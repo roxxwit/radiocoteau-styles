@@ -510,7 +510,6 @@ section.mobile-navigation li {
     color: #7b8f9e !important; /* Adjust this hex to match your exact blue/gray */
     text-decoration: none !important;
     letter-spacing: 1px !important;
-    padding-bottom: 15px !important; /* Spaces the list items out */
 }
 /* 1. Force left alignment and remove the horizontal lines */
 section.mobile-navigation ul, 
