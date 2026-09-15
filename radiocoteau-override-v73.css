@@ -468,3 +468,24 @@ bs-datepicker-container {
 .wineclub-registration-wizard {
   margin-bottom: 35px !important;
 }
+/* 1. Hide the overlapping duplicate menu causing the white bar */
+.main-menu li.has-child ul.sub-menu + ul.sub-menu {
+    display: none !important;
+}
+
+/* 2. Format 3rd-level submenus to fly out to the right */
+ul.sub-menu li {
+    position: relative;
+}
+ul.sub-menu ul {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    display: none;
+    background-color: var(--color-white, #ffffff);
+    min-width: 200px;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+}
+ul.sub-menu li:hover > ul {
+    display: block;
+}
