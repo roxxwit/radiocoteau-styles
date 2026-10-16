@@ -607,3 +607,20 @@ section.mobile-navigation li:hover > ul,
 section.mobile-navigation li:focus-within > ul {
     display: block !important;
 }
+
+/* 16 OCT 2026 */
+/* ========================================
+   Fix Empty Category (No-Data) 90px Padding
+   ======================================== */
+#cat-v1-1 .no-data,
+.shop-holder .no-data {
+    padding: 0 !important;
+}
+
+/* ========================================
+   Hide Active Cart Sidebar on Empty Categories
+   ======================================== */
+.activeCart-panel,
+.uc.activeCart {
+    display: none !important;
+}
